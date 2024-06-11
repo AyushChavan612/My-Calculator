@@ -1,0 +1,151 @@
+.heading {
+    font-size: 100px;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 19, 19);
+    margin: 0;
+    height: 100vh;
+}
+
+.calc-body {
+    height: auto;
+    width: 350px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.show-calculations {
+    height: 100px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.numbers-operators {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.numbers {
+    border-radius: 50%;
+    background-color: rgb(31, 29, 29);
+    color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.operators {
+    background-color: rgb(204, 132, 23);
+}
+
+.Clear {
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) and (min-width: 471px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(22, 19, 19);
+        margin: 0;
+        height: 100vh;
+    }
+
+    .calc-body {
+        width: 250px;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+
+    .heading {
+        font-size: 70px;
+    }
+
+    .show-calculations {
+        font-size: 40px;
+        height: 80px;
+    }
+
+    .numbers {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+    }
+
+    .Clear {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(22, 19, 19);
+        margin: 0;
+        height: 100vh;
+    }
+
+    .calc-body {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .show-calculations {
+        font-size: 24px;
+        height: 50px;
+    }
+
+    .numbers-operators {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+    }
+
+    .numbers {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+    }
+
+    .Clear {
+        font-size: 10px;
+    }
+}
